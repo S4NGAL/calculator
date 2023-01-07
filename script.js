@@ -124,3 +124,5 @@ function deleter(){
         display.textContent = equation1+ singHolder + equation2;
     }
 }
+
+
