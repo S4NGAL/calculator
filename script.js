@@ -66,3 +66,20 @@ function reset() {
     total = 0;
     singHolder = "";
 }
+
+const answerButton = document.getElementById("answer");
+answerButton.addEventListener("click", function(){
+    if(answer === 0) {
+        console.log("answer is empty")
+        return "answer is empty"
+    };
+    if (equation1 === "") {
+        console.log(answer)
+        equation1 = answer;
+    }else if (equation2 === ""){
+        console.log(answer)
+        equation2 = answer;
+    }else{
+        console.log("!!!both equations are fullified!!!!");
+    }
+});
