@@ -11,28 +11,42 @@
 
 <body>
     <div id="calc_body">
-        <div id="title"></div>
-        <div id="display"></div>
-        <div id="numpad">
-            <button id="zero">0</button>
-            <button id="one">1</button>
-            <button id="two">2</button>
-            <button id="three">3</button>
-            <button id="four">4</button>
-            <button id="five">5</button>
-            <button id="six">6</button>
-            <button id="seven">7</button>
-            <button id="eight">8</button>
-            <button id="nine">9</button>
-            <button id="add">+</button>
-            <button id="substract">-</button>
-            <button id="multiply">X</button>
-            <button id="divide">/</button>
-            <button id="decimaler">.</button>
-            <button id="equals">=</button>
-            <button id="clear">C</button>
-            <button id="delete">delete</button>
-            
+        <div class="container" id="title"><h1>CALCULATOR</h1></div>
+        <div class="container" id="display"></div>
+        <div class="container" id="numpad">
+            <div id="first" class="parts">
+                <button class="button" id="clear">C</button>
+                <button class="button" id="delete">del</button>
+            </div>
+            <div id="second" class="parts">
+                <div class="inner_nums">
+                    <button class="button" id="seven">7</button>
+                    <button class="button" id="eight">8</button>
+                    <button class="button" id="nine">9</button>
+                </div>
+                <div class="inner_nums">
+                    <button class="button" id="four">4</button>
+                    <button class="button" id="five">5</button>
+                    <button class="button" id="six">6</button>
+                </div>
+                <div class="inner_nums">
+                    <button class="button" id="one">1</button>
+                    <button class="button" id="two">2</button>
+                    <button class="button" id="three">3</button>
+                </div>
+                <div class="inner_nums">
+                    <button class="button" id="zero">0</button>
+                    <button class="button" id="decimaler">.</button>
+                    <button class="button" id="equals">=</button>   
+                </div>
+            </div>
+            <div id="third" class="parts">
+                <button class="button" id="add">+</button>
+                <button class="button" id="substract">-</button>
+                <button class="button" id="multiply">X</button>
+                <button class="button" id="divide">/</button>
+            </div>
+
         </div>
     </div>    
 </body>
