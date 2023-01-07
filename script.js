@@ -9,6 +9,18 @@ let total = 0;
 let singHolder = "";
 display.textContent = equation1+ singHolder + equation2;
 
+
+const clearButton = document.getElementById("clear");
+clearButton.addEventListener("click", function(){
+    display.textContent = "...";
+    reset();
+});
+
+const deleteButton = document.getElementById("delete");
+deleteButton.addEventListener("click", function(){
+    deleter();
+});
+
 const equal = document.getElementById("equals");
 equal.addEventListener("click", function(){
     switch (singHolder) {
@@ -100,7 +112,15 @@ answerButton.addEventListener("click", function(){
     }
 });
 
-
-function displayUpdater(){
-    display.textContent = equation1+ singHolder + equation2;
+function deleter(){
+    if(equation2 != ""){
+        equation2 = equation2.slice(0, -1);
+        display.textContent = equation1+ singHolder + equation2;
+    } else if (singHolder != ""){
+        singHolder = "";
+        display.textContent = equation1+ singHolder + equation2;
+    } else if (equation1 != ""){
+        equation1 = equation1.slice(0, -1);
+        display.textContent = equation1+ singHolder + equation2;
+    }
 }
